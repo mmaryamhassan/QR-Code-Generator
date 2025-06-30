@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRcode Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/027/501/741/non_2x/simple-qr-code-icon-the-icon-can-be-used-for-websites-print-templates-presentation-templates-illustrations-etc-free-vector.jpg"
+    type="image/x-icon">
+    <!-- External QR code library -->
+    <!--This is the liberary which helps to convert simple data to the images-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>QR Code Generator</h1>
+            <p>Generate QR codes for any text or URL</p>
+        </div>
+        <div class="qrcode-form">
+            <input type="text" id="text-input" placeholder="Enter text or URL" />
+            <button id="generate-btn" onclick="genQRCode()">Generate</button>
+            <div id="qrcode">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
